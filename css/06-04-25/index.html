@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+        /* .box{
+            font-size: 10px;
+            font-weight: bold;
+            font-family: "Roboto", sans-serif;
+            text-align: justify;
+            line-height: 20px;
+            letter-spacing: 5px;
+            
+        }
+        ul>li{
+            list-style:decimal-leading-zero;
+        }
+         */
+
+         /* .realtive{
+            width: 150px;
+            height: 150px;
+            background-color: aqua;
+            position: relative;
+            top: 100px;
+            left: 50px;
+         } */
+
+         .parent{
+            width: 300px;
+            height: 200px;
+            background-color: red;
+            position: relative;
+         }
+
+         .child{
+            width: 100px;
+            height: 50px;
+            background-color: aqua;
+            position: absolute;
+            top: 30px;
+            left: 40px;
+         }
+       
+
+         /* .absolute{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+            top:300px;
+            left: 100px;
+         } */
+
+         /* .container{
+            width: 100%;
+            height: 800px;
+            background-color: brown;
+         } */
+         .btn {
+    position: fixed;
+    
+   top: 30px;
+   left: 300px;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    background: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.container {
+    height: 1200px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    background-color: green;
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: #ff9800;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+      .box{
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        
+      }
+      .box1{
+        background-color: red;
+        z-index: 1;
+        
+      }
+      .box2{
+        background-color: aqua;
+        position: absolute;
+        bottom: 300px;
+        z-index: 3;
+      }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- <div class="absolute">Mai Absolute Ho</div> -->
+
+
+    <!-- <a href="">Home</a>
+    <ul>
+        <li>APPle</li>
+        <li>Mango</li>
+    </ul>
+
+
+
+    <p class="box">
+        Lorem ipsum dolor sit, <span>amet</span> consectetur adipisicing elit. Nesciunt, eligendi! Officia et, ipsam quam voluptas unde asperiores amet obcaecati similique soluta, nobis id. Inventore perspiciatis, sapiente dolorem nihil facilis suscipit?
+    </p>
+     -->
+
+     <!-- <div class="container">
+        <div class="realtive">Box position Relative</div> 
+      <div class="parent">Mai Parent Ho
+        <div class="child">Mai Child Ho</div>
+        <button class="btn">Mai Fixed Ho</button>
+
+      </div>
+
+     </div> -->
+
+     <!-- <h2>Sticky Position Example</h2>
+
+<div class="container">
+    <div class="sticky-header">Main Sticky Hoon! 🌟</div>
+    <p>Scroll karo aur dekho magic! 👇</p>
+    <p>Yeh ek normal paragraph hai.</p>
+    <p>Aur yeh dusra paragraph hai.</p>
+    <p>Zyada scroll karo, dekhte hain kya hota hai...</p>
+</div>
+
+
+  <div class="box">
+    <p>Shahbaz</p>
+  </div> -->
+
+  <div class="box1 box">
+    Mai Box1 Hoon
+  </div>
+  <div class="box2 box">
+    Mian Box2 Hoon
+  </div>
+
+     
+
+
+</body>
+</html>
