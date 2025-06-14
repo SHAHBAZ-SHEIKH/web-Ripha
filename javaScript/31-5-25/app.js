@@ -32,25 +32,148 @@
 // result.innerHTML = "BackGround Color Code" + "#" + hexCode
 // }
 
-var today = new Date()
-var eidDate = new Date("june 7,2025")
-// console.log(today.getTime())
-// console.log(eidDate.getTime())
-var diff = eidDate - today
-//days
-console.log(Math.floor(diff/ (1000 * 60 * 60 * 24)))
-//hours
-console.log(Math.floor(diff/(1000*60*60) % 24))
 
-//minutes
-console.log(Math.floor(diff/(1000*60) % 60))
+// function eidCountDown(){
+
+//     var d = document.getElementById("days")
+    
+//     var h = document.getElementById("hours")
+//     var m = document.getElementById("min")
+//     var s = document.getElementById("sec")
+
+//     var today = new Date()
+// var eidDate = new Date("june 7,2025")
+// // console.log(today.getTime())
+// // console.log(eidDate.getTime())
+// var diff = eidDate - today
+
+// //days
+// var days = Math.floor(diff/ (1000 * 60 * 60 * 24))
+// //hours
+// var hours = Math.floor(diff/(1000*60*60) % 24)
+
+// //minutes
+// var min = Math.floor(diff/(1000*60) % 60)
+
+// //sec
+// var sec = Math.floor(diff/(1000) % 60)
+
+// d.innerText = days
+// h.innerText = hours
+// m.innerText = min
+// s.innerText = sec
+
+// }
+
+
+// setInterval(eidCountDown,1000)
+
+
 
 // var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
 
 // console.log(days[today.getDay()])
 
 
-// setTimeout(function(){
-//     console.log("hello")
+// var count = 0
 
-// },3000)
+// var id  = setInterval(function(){
+//     count++
+
+//     document.write(`<h1>${count}</h1>`)
+//     if(count ==5){
+//         clearInterval(id)
+//     }
+
+// },1000)
+
+ 
+// var name = "Shahbaz"
+
+// function addNumer(a,b){
+    
+//     var result = a + b
+
+//     console.log("result===>",result)
+
+//     return result
+
+    
+    
+
+// }
+
+//console.log(result)
+
+//var arr = ["Apple","Banana"]
+
+// var myFunction = addNumer(2,5) // 7
+
+// console.log(myFunction)
+
+
+// function largestNumber(){
+//     var num = [10,20,30,50,70,90,2,4,5]
+//     var max = num[0]
+
+//     for(var i=0; i<num.length; i++){
+//         if(num[i] > max){
+//             max = num[i]
+//         }
+//     }
+//     return max
+// }
+
+// var result = largestNumber()
+// console.log("Largest Number is ",result)
+
+// function lasrgestWor(str){
+//     var word = str.split(" ")
+//     var find = ""
+//     console.log(word)
+
+//     for(var i=0; i<word.length; i++){
+//         if(word[i].length > find.length ){
+//             find = word[i]
+//         }
+//     }
+
+//     return find
+
+// }
+// console.log(lasrgestWor("web Development"))
+
+
+// function largestNumber(){
+//     var  num = [12,13,14,70,60,80,2,4,5,100,7,8]
+//     var max = num[0]
+
+//     for(var i=0; i<num.length; i++){
+
+//         if(num[i] > max){
+//             max = num[i]
+//         }
+
+//     }
+
+//     console.log(max)
+// }
+
+// largestNumber()
+
+function largestNumber(){
+    var  num = [12,13,14,70,60,80,2,4,5,100,7,8]
+    var min = num[0]
+
+    for(var i=0; i<num.length; i++){
+
+        if(num[i] < min){
+            min = num[i]
+        }
+
+    }
+
+    console.log(min)
+}
+
+largestNumber()
